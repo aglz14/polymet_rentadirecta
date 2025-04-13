@@ -1,0 +1,302 @@
+export const PROPERTY_UNITS_DATA = [
+  {
+    id: "unit-1",
+    unitNumber: "A-101",
+    size: 75,
+    bedrooms: 2,
+    bathrooms: 1,
+    floor: 1,
+    building: "Edificio Alameda",
+    address: "Av. Alameda 123, Ciudad de México",
+    tenant: {
+      name: "Carlos Rodríguez",
+      avatar: "https://github.com/yusufhilmi.png",
+    },
+    rentAmount: 12500,
+    rentStatus: "paid",
+    leaseEndDate: "2024-12-31",
+    maintenanceStatus: "none",
+    image: "https://picsum.photos/seed/apartment1/800/600",
+  },
+  {
+    id: "unit-2",
+    unitNumber: "A-102",
+    size: 65,
+    bedrooms: 1,
+    bathrooms: 1,
+    floor: 1,
+    building: "Edificio Alameda",
+    address: "Av. Alameda 123, Ciudad de México",
+    tenant: {
+      name: "Laura González",
+      avatar: "https://github.com/yahyabedirhan.png",
+    },
+    rentAmount: 9800,
+    rentStatus: "paid",
+    leaseEndDate: "2024-11-30",
+    maintenanceStatus: "none",
+    image: "https://picsum.photos/seed/apartment2/800/600",
+  },
+  {
+    id: "unit-3",
+    unitNumber: "A-201",
+    size: 80,
+    bedrooms: 2,
+    bathrooms: 2,
+    floor: 2,
+    building: "Edificio Alameda",
+    address: "Av. Alameda 123, Ciudad de México",
+    tenant: {
+      name: "Miguel Sánchez",
+      avatar: "https://github.com/kdrnp.png",
+    },
+    rentAmount: 13500,
+    rentStatus: "pending",
+    leaseEndDate: "2024-10-15",
+    maintenanceStatus: "none",
+    image: "https://picsum.photos/seed/apartment3/800/600",
+  },
+  {
+    id: "unit-4",
+    unitNumber: "A-202",
+    size: 70,
+    bedrooms: 2,
+    bathrooms: 1,
+    floor: 2,
+    building: "Edificio Alameda",
+    address: "Av. Alameda 123, Ciudad de México",
+    tenant: {
+      name: "Ana Martínez",
+      avatar: "https://github.com/furkanksl.png",
+    },
+    rentAmount: 11000,
+    rentStatus: "overdue",
+    leaseEndDate: "2024-09-30",
+    maintenanceStatus: "scheduled",
+    image: "https://picsum.photos/seed/apartment4/800/600",
+  },
+  {
+    id: "unit-5",
+    unitNumber: "A-301",
+    size: 85,
+    bedrooms: 3,
+    bathrooms: 2,
+    floor: 3,
+    building: "Edificio Alameda",
+    address: "Av. Alameda 123, Ciudad de México",
+    rentAmount: 14500,
+    rentStatus: "vacant",
+    maintenanceStatus: "completed",
+    image: "https://picsum.photos/seed/apartment5/800/600",
+  },
+  {
+    id: "unit-6",
+    unitNumber: "B-101",
+    size: 60,
+    bedrooms: 1,
+    bathrooms: 1,
+    floor: 1,
+    building: "Residencial Los Pinos",
+    address: "Calle Los Pinos 456, Guadalajara",
+    tenant: {
+      name: "Roberto Díaz",
+      avatar: "https://github.com/buyuktas18.png",
+    },
+    rentAmount: 8500,
+    rentStatus: "paid",
+    leaseEndDate: "2025-01-15",
+    maintenanceStatus: "none",
+    image: "https://picsum.photos/seed/apartment6/800/600",
+  },
+  {
+    id: "unit-7",
+    unitNumber: "B-102",
+    size: 65,
+    bedrooms: 1,
+    bathrooms: 1,
+    floor: 1,
+    building: "Residencial Los Pinos",
+    address: "Calle Los Pinos 456, Guadalajara",
+    tenant: {
+      name: "Carmen Vega",
+      avatar: "https://github.com/yahyabedirhan.png",
+    },
+    rentAmount: 8800,
+    rentStatus: "pending",
+    leaseEndDate: "2024-10-31",
+    maintenanceStatus: "none",
+    image: "https://picsum.photos/seed/apartment7/800/600",
+  },
+  {
+    id: "unit-8",
+    unitNumber: "B-201",
+    size: 75,
+    bedrooms: 2,
+    bathrooms: 1,
+    floor: 2,
+    building: "Residencial Los Pinos",
+    address: "Calle Los Pinos 456, Guadalajara",
+    rentAmount: 10500,
+    rentStatus: "vacant",
+    maintenanceStatus: "inProgress",
+    image: "https://picsum.photos/seed/apartment8/800/600",
+  },
+  {
+    id: "unit-9",
+    unitNumber: "L-101",
+    size: 120,
+    bedrooms: 0,
+    bathrooms: 1,
+    floor: 1,
+    building: "Centro Comercial Reforma",
+    address: "Av. Reforma 789, Ciudad de México",
+    tenant: {
+      name: "Tienda Moda Express",
+      avatar: "https://github.com/polymet-ai.png",
+    },
+    rentAmount: 25000,
+    rentStatus: "paid",
+    leaseEndDate: "2025-06-30",
+    maintenanceStatus: "none",
+    image: "https://picsum.photos/seed/store1/800/600",
+  },
+  {
+    id: "unit-10",
+    unitNumber: "L-102",
+    size: 90,
+    bedrooms: 0,
+    bathrooms: 1,
+    floor: 1,
+    building: "Centro Comercial Reforma",
+    address: "Av. Reforma 789, Ciudad de México",
+    tenant: {
+      name: "Restaurante El Buen Sabor",
+      avatar: "https://github.com/polymet-ai.png",
+    },
+    rentAmount: 22000,
+    rentStatus: "overdue",
+    leaseEndDate: "2024-08-15",
+    maintenanceStatus: "scheduled",
+    image: "https://picsum.photos/seed/restaurant1/800/600",
+  },
+  {
+    id: "unit-11",
+    unitNumber: "L-201",
+    size: 100,
+    bedrooms: 0,
+    bathrooms: 1,
+    floor: 2,
+    building: "Centro Comercial Reforma",
+    address: "Av. Reforma 789, Ciudad de México",
+    tenant: {
+      name: "Gimnasio Fitness Plus",
+      avatar: "https://github.com/polymet-ai.png",
+    },
+    rentAmount: 18000,
+    rentStatus: "pending",
+    leaseEndDate: "2024-11-30",
+    maintenanceStatus: "none",
+    image: "https://picsum.photos/seed/gym1/800/600",
+  },
+  {
+    id: "unit-12",
+    unitNumber: "O-301",
+    size: 150,
+    bedrooms: 0,
+    bathrooms: 2,
+    floor: 3,
+    building: "Edificio Corporativo Insurgentes",
+    address: "Av. Insurgentes 321, Ciudad de México",
+    tenant: {
+      name: "Consultora Estratégica S.A.",
+      avatar: "https://github.com/polymet-ai.png",
+    },
+    rentAmount: 35000,
+    rentStatus: "paid",
+    leaseEndDate: "2025-03-31",
+    maintenanceStatus: "none",
+    image: "https://picsum.photos/seed/office1/800/600",
+  },
+  {
+    id: "unit-13",
+    unitNumber: "O-302",
+    size: 120,
+    bedrooms: 0,
+    bathrooms: 1,
+    floor: 3,
+    building: "Edificio Corporativo Insurgentes",
+    address: "Av. Insurgentes 321, Ciudad de México",
+    tenant: {
+      name: "Despacho Legal Asociados",
+      avatar: "https://github.com/polymet-ai.png",
+    },
+    rentAmount: 28000,
+    rentStatus: "pending",
+    leaseEndDate: "2024-12-15",
+    maintenanceStatus: "scheduled",
+    image: "https://picsum.photos/seed/office2/800/600",
+  },
+  {
+    id: "unit-14",
+    unitNumber: "O-401",
+    size: 200,
+    bedrooms: 0,
+    bathrooms: 2,
+    floor: 4,
+    building: "Edificio Corporativo Insurgentes",
+    address: "Av. Insurgentes 321, Ciudad de México",
+    rentAmount: 45000,
+    rentStatus: "vacant",
+    maintenanceStatus: "inProgress",
+    image: "https://picsum.photos/seed/office3/800/600",
+  },
+  {
+    id: "unit-15",
+    unitNumber: "O-402",
+    size: 180,
+    bedrooms: 0,
+    bathrooms: 2,
+    floor: 4,
+    building: "Edificio Corporativo Insurgentes",
+    address: "Av. Insurgentes 321, Ciudad de México",
+    tenant: {
+      name: "Agencia de Marketing Digital",
+      avatar: "https://github.com/polymet-ai.png",
+    },
+    rentAmount: 40000,
+    rentStatus: "overdue",
+    leaseEndDate: "2024-09-30",
+    maintenanceStatus: "none",
+    image: "https://picsum.photos/seed/office4/800/600",
+  },
+];
+
+export type PropertyUnit = (typeof PROPERTY_UNITS_DATA)[0];
+
+export const getUnitsByBuilding = (buildingName: string) => {
+  return PROPERTY_UNITS_DATA.filter((unit) => unit.building === buildingName);
+};
+
+export const getUnitsByStatus = (status: string) => {
+  return PROPERTY_UNITS_DATA.filter((unit) => unit.rentStatus === status);
+};
+
+export const getUnitsByMaintenanceStatus = (status: string) => {
+  return PROPERTY_UNITS_DATA.filter(
+    (unit) => unit.maintenanceStatus === status
+  );
+};
+
+export const getVacantUnits = () => {
+  return PROPERTY_UNITS_DATA.filter((unit) => unit.rentStatus === "vacant");
+};
+
+export const getOccupiedUnits = () => {
+  return PROPERTY_UNITS_DATA.filter((unit) => unit.rentStatus !== "vacant");
+};
+
+export const getUnitsByFloor = (buildingName: string, floor: number) => {
+  return PROPERTY_UNITS_DATA.filter(
+    (unit) => unit.building === buildingName && unit.floor === floor
+  );
+};
