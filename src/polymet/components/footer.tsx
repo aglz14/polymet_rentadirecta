@@ -12,21 +12,21 @@ import BrandLogo from "@/polymet/components/brand-logo";
 export default function Footer() {
   return (
     <footer className="border-t border-border/40 bg-background">
-      <div className="container max-w-screen-xl py-10 md:py-16">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5">
-          <div className="lg:col-span-2">
-            <div className="flex items-center gap-2">
+      <div className="container max-w-screen-xl py-10 md:py-16 flex flex-col items-center"> {/* Added flex and items-center */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5 w-full max-w-7xl mx-auto"> {/* Added mx-auto and w-full */}
+          <div className="lg:col-span-2 text-center"> {/* Added text-center */}
+            <div className="flex items-center gap-2 mx-auto"> {/* Added mx-auto */}
               <BrandLogo withDomain={true} />
             </div>
-            <p className="mt-4 max-w-md text-muted-foreground">
+            <p className="mt-4 max-w-md text-muted-foreground mx-auto"> {/* Added mx-auto */}
               Simplificando la gestión de propiedades y rentas para empresas de
               desarrollo inmobiliario e inversionistas.
             </p>
-            <div className="mt-6">
+            <div className="mt-6 mx-auto"> {/* Added mx-auto */}
               <h3 className="mb-4 text-sm font-semibold">
                 Suscríbete a nuestro boletín
               </h3>
-              <div className="flex max-w-md flex-col gap-2 sm:flex-row">
+              <div className="flex max-w-md flex-col gap-2 sm:flex-row mx-auto"> {/* Added mx-auto */}
                 <Input
                   type="email"
                   placeholder="Tu correo electrónico"
@@ -43,9 +43,9 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
+          <div className="text-center"> {/* Added text-center */}
             <h3 className="mb-4 text-sm font-semibold">Soluciones</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm mx-auto"> {/* Added mx-auto */}
               <li>
                 <Link
                   to="/soluciones/gestion-propiedades"
@@ -81,9 +81,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center"> {/* Added text-center */}
             <h3 className="mb-4 text-sm font-semibold">Empresa</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm mx-auto"> {/* Added mx-auto */}
               <li>
                 <Link
                   to="/sobre-nosotros"
@@ -111,9 +111,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          <div>
+          <div className="text-center"> {/* Added text-center */}
             <h3 className="mb-4 text-sm font-semibold">Legal</h3>
-            <ul className="space-y-2 text-sm">
+            <ul className="space-y-2 text-sm mx-auto"> {/* Added mx-auto */}
               <li>
                 <Link
                   to="/privacidad"
@@ -139,9 +139,9 @@ export default function Footer() {
                 </Link>
               </li>
             </ul>
-            <div className="mt-6">
+            <div className="mt-6 mx-auto"> {/* Added mx-auto */}
               <h3 className="mb-4 text-sm font-semibold">Síguenos</h3>
-              <div className="flex space-x-4">
+              <div className="flex space-x-4 mx-auto"> {/* Added mx-auto */}
                 <Link
                   to="#"
                   className="text-muted-foreground hover:text-[#1B2A55]"
@@ -175,7 +175,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-border/40 pt-6 text-center">
+        <div className="mt-10 border-t border-border/40 pt-6"> {/* Removed text-center */}
           <div className="flex flex-col items-center gap-4">
             <p className="text-sm text-muted-foreground">
               &copy; {new Date().getFullYear()} RentaDirecta. Todos los derechos
