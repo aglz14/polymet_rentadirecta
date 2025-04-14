@@ -21,7 +21,7 @@ export default function CobroRentasPage() {
         <div className="w-full px-4 md:px-6">
           <div className="mx-auto max-w-screen-xl">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
-            <div>
+              <div>
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
                 Cobro de <span className="text-[#86BC65]">Rentas</span>
               </h1>
