@@ -11,7 +11,7 @@ import {
   Document,
 } from "@/polymet/data/documents-data";
 import { TENANTS_DATA } from "@/polymet/data/tenants-data";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 
 export default function DocumentosPage() {
   const [filteredDocuments, setFilteredDocuments] =

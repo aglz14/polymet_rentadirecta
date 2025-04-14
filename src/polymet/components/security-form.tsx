@@ -17,7 +17,7 @@ import {
   CheckIcon,
   AlertCircleIcon,
 } from "lucide-react";
-import { useToast } from "@/components/ui/use-toast";
+import { useToast } from "@/hooks/use-toast";
 
 export default function SecurityForm() {
   const [formData, setFormData] = useState({
