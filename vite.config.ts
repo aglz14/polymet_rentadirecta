@@ -11,7 +11,11 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true,
-    port: 5173
+    port: 5173,
+    allowedHosts: [
+      '16860869-2011-4962-a75c-14ddc73d5de0-00-2rohfkal8ko3y.spock.replit.dev',
+      'all'
+    ]
   },
   resolve: {
     alias: {
