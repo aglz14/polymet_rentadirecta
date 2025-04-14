@@ -6,200 +6,211 @@ import {
   InstagramIcon,
   LinkedinIcon,
   TwitterIcon,
+  MailIcon,
 } from "lucide-react";
 import BrandLogo from "@/polymet/components/brand-logo";
 
 export default function Footer() {
   return (
     <footer className="border-t border-border/40 bg-background">
-      <div className="container max-w-screen-xl py-10 md:py-16 flex flex-col items-center"> {/* Added flex and items-center */}
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-5 w-full max-w-7xl mx-auto"> {/* Added mx-auto and w-full */}
-          <div className="lg:col-span-2 text-center"> {/* Added text-center */}
-            <div className="flex items-center gap-2 mx-auto"> {/* Added mx-auto */}
-              <BrandLogo withDomain={true} />
+      <div className="container flex h-full max-w-screen-xl mx-auto px-4">
+        <div className="w-full py-12 md:py-16">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4 w-full">
+            {/* Brand and Newsletter Section */}
+            <div className="flex flex-col items-center md:items-start space-y-6">
+              <div className="flex items-center gap-2">
+                <BrandLogo withDomain={true} />
+              </div>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Simplificando la gestión de propiedades y rentas para empresas
+                de desarrollo inmobiliario e inversionistas.
+              </p>
+              <div className="w-full">
+                <h3 className="text-sm font-semibold mb-3">
+                  Mantente informado
+                </h3>
+                <div className="flex flex-col gap-2">
+                  <Input
+                    type="email"
+                    placeholder="Tu correo electrónico"
+                    className="rounded-md"
+                  />
+                  <Button
+                    type="submit"
+                    className="bg-[#1B2A55] hover:bg-[#1B2A55]/90 transition-colors"
+                  >
+                    <MailIcon className="mr-2 h-4 w-4" />
+                    Suscribirse
+                  </Button>
+                </div>
+              </div>
             </div>
-            <p className="mt-4 max-w-md text-muted-foreground mx-auto"> {/* Added mx-auto */}
-              Simplificando la gestión de propiedades y rentas para empresas de
-              desarrollo inmobiliario e inversionistas.
-            </p>
-            <div className="mt-6 mx-auto"> {/* Added mx-auto */}
-              <h3 className="mb-4 text-sm font-semibold">
-                Suscríbete a nuestro boletín
-              </h3>
-              <div className="flex max-w-md flex-col gap-2 sm:flex-row mx-auto"> {/* Added mx-auto */}
-                <Input
-                  type="email"
-                  placeholder="Tu correo electrónico"
-                  className="rounded-md"
-                />
 
-                <Button
-                  type="submit"
-                  className="bg-[#1B2A55] hover:bg-[#1B2A55]/90"
-                >
-                  Suscribirse
-                </Button>
+            {/* Solutions Section */}
+            <div className="flex flex-col items-center md:items-start">
+              <h3 className="text-sm font-semibold mb-4">Soluciones</h3>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  <Link
+                    to="/soluciones/gestion-propiedades"
+                    className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                  >
+                    Gestión de Propiedades
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/soluciones/cobro-rentas"
+                    className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                  >
+                    Cobro de Rentas
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/soluciones/gestion-inquilinos"
+                    className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                  >
+                    Gestión de Inquilinos
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/soluciones/gestion-documental"
+                    className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                  >
+                    Gestión Documental
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Company Section */}
+            <div className="flex flex-col items-center md:items-start">
+              <h3 className="text-sm font-semibold mb-4">Empresa</h3>
+              <ul className="space-y-3 text-sm">
+                <li>
+                  <Link
+                    to="/sobre-nosotros"
+                    className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                  >
+                    Sobre Nosotros
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/carreras"
+                    className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                  >
+                    Carreras
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/contacto"
+                    className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                  >
+                    Contacto
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            {/* Legal and Social Section */}
+            <div className="flex flex-col items-center md:items-start space-y-6">
+              <div>
+                <h3 className="text-sm font-semibold mb-4">Legal</h3>
+                <ul className="space-y-3 text-sm">
+                  <li>
+                    <Link
+                      to="/privacidad"
+                      className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                    >
+                      Política de Privacidad
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/terminos"
+                      className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                    >
+                      Términos de Servicio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/cookies"
+                      className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                    >
+                      Política de Cookies
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-sm font-semibold mb-4">Síguenos</h3>
+                <div className="flex space-x-4">
+                  <Link
+                    to="#"
+                    className="text-muted-foreground hover:text-[#1B2A55] transition-colors"
+                    aria-label="Facebook"
+                  >
+                    <FacebookIcon className="h-5 w-5" />
+                  </Link>
+                  <Link
+                    to="#"
+                    className="text-muted-foreground hover:text-[#1B2A55] transition-colors"
+                    aria-label="Twitter"
+                  >
+                    <TwitterIcon className="h-5 w-5" />
+                  </Link>
+                  <Link
+                    to="#"
+                    className="text-muted-foreground hover:text-[#1B2A55] transition-colors"
+                    aria-label="Instagram"
+                  >
+                    <InstagramIcon className="h-5 w-5" />
+                  </Link>
+                  <Link
+                    to="#"
+                    className="text-muted-foreground hover:text-[#1B2A55] transition-colors"
+                    aria-label="LinkedIn"
+                  >
+                    <LinkedinIcon className="h-5 w-5" />
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="text-center"> {/* Added text-center */}
-            <h3 className="mb-4 text-sm font-semibold">Soluciones</h3>
-            <ul className="space-y-2 text-sm mx-auto"> {/* Added mx-auto */}
-              <li>
+          {/* Bottom Bar */}
+          <div className="mt-12 border-t border-border/40 pt-6">
+            <div className="flex flex-col items-center gap-4">
+              <p className="text-sm text-muted-foreground">
+                &copy; {new Date().getFullYear()} RentaDirecta. Todos los
+                derechos reservados.
+              </p>
+              <div className="flex items-center gap-4">
                 <Link
-                  to="/soluciones/gestion-propiedades"
-                  className="text-muted-foreground hover:text-[#86BC65]"
+                  to="/privacidad"
+                  className="text-sm text-muted-foreground hover:text-[#86BC65] transition-colors"
                 >
-                  Gestión de Propiedades
+                  Privacidad
                 </Link>
-              </li>
-              <li>
                 <Link
-                  to="/soluciones/cobro-rentas"
-                  className="text-muted-foreground hover:text-[#86BC65]"
+                  to="/terminos"
+                  className="text-sm text-muted-foreground hover:text-[#86BC65] transition-colors"
                 >
-                  Cobro de Rentas
+                  Términos
                 </Link>
-              </li>
-              <li>
-                <Link
-                  to="/soluciones/gestion-inquilinos"
-                  className="text-muted-foreground hover:text-[#86BC65]"
-                >
-                  Gestión de Inquilinos
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/soluciones/gestion-documental"
-                  className="text-muted-foreground hover:text-[#86BC65]"
-                >
-                  Gestión Documental
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="text-center"> {/* Added text-center */}
-            <h3 className="mb-4 text-sm font-semibold">Empresa</h3>
-            <ul className="space-y-2 text-sm mx-auto"> {/* Added mx-auto */}
-              <li>
-                <Link
-                  to="/sobre-nosotros"
-                  className="text-muted-foreground hover:text-[#86BC65]"
-                >
-                  Sobre Nosotros
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/carreras"
-                  className="text-muted-foreground hover:text-[#86BC65]"
-                >
-                  Carreras
-                </Link>
-              </li>
-              <li>
                 <Link
                   to="/contacto"
-                  className="text-muted-foreground hover:text-[#86BC65]"
+                  className="text-sm text-muted-foreground hover:text-[#86BC65] transition-colors"
                 >
                   Contacto
                 </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div className="text-center"> {/* Added text-center */}
-            <h3 className="mb-4 text-sm font-semibold">Legal</h3>
-            <ul className="space-y-2 text-sm mx-auto"> {/* Added mx-auto */}
-              <li>
-                <Link
-                  to="/privacidad"
-                  className="text-muted-foreground hover:text-[#86BC65]"
-                >
-                  Política de Privacidad
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/terminos"
-                  className="text-muted-foreground hover:text-[#86BC65]"
-                >
-                  Términos de Servicio
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/cookies"
-                  className="text-muted-foreground hover:text-[#86BC65]"
-                >
-                  Política de Cookies
-                </Link>
-              </li>
-            </ul>
-            <div className="mt-6 mx-auto"> {/* Added mx-auto */}
-              <h3 className="mb-4 text-sm font-semibold">Síguenos</h3>
-              <div className="flex space-x-4 mx-auto"> {/* Added mx-auto */}
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-[#1B2A55]"
-                >
-                  <FacebookIcon className="h-5 w-5" />
-                  <span className="sr-only">Facebook</span>
-                </Link>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-[#1B2A55]"
-                >
-                  <TwitterIcon className="h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
-                </Link>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-[#1B2A55]"
-                >
-                  <InstagramIcon className="h-5 w-5" />
-                  <span className="sr-only">Instagram</span>
-                </Link>
-                <Link
-                  to="#"
-                  className="text-muted-foreground hover:text-[#1B2A55]"
-                >
-                  <LinkedinIcon className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
-                </Link>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-10 border-t border-border/40 pt-6"> {/* Removed text-center */}
-          <div className="flex flex-col items-center gap-4">
-            <p className="text-sm text-muted-foreground">
-              &copy; {new Date().getFullYear()} RentaDirecta. Todos los derechos
-              reservados.
-            </p>
-            <div className="flex space-x-4">
-              <Link
-                to="/privacidad"
-                className="text-sm text-muted-foreground hover:text-[#86BC65]"
-              >
-                Privacidad
-              </Link>
-              <Link
-                to="/terminos"
-                className="text-sm text-muted-foreground hover:text-[#86BC65]"
-              >
-                Términos
-              </Link>
-              <Link
-                to="/contacto"
-                className="text-sm text-muted-foreground hover:text-[#86BC65]"
-              >
-                Contacto
-              </Link>
             </div>
           </div>
         </div>
