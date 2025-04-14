@@ -175,8 +175,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-border/40 pt-6">
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+        <div className="mt-10 border-t border-border/40 pt-6 text-center">
+          <div className="flex flex-col items-center gap-4">
             <p className="text-sm text-muted-foreground">
               &copy; {new Date().getFullYear()} RentaDirecta. Todos los derechos
               reservados.
