@@ -18,45 +18,47 @@ export default function GestionDocumentalPage() {
           <div className="absolute right-[-10%] top-[30%] h-[400px] w-[400px] rounded-full bg-[#86BC65]/10 blur-3xl"></div>
         </div>
 
-        <div className="container max-w-screen-xl">
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
-            <div>
-              <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
-                Gestión <span className="text-[#86BC65]">Documental</span>
-              </h1>
-              <p className="mt-6 text-xl text-white/90">
-                Almacene y gestione contratos, documentos legales e
-                identificaciones de manera segura y organizada.
-              </p>
-              <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <Link to="/registro">
-                  <Button
-                    size="lg"
-                    className="text-base bg-white text-[#1B2A55] hover:bg-white/90"
-                  >
-                    Comenzar ahora
-                    <ArrowRightIcon className="ml-2 h-4 w-4" />
-                  </Button>
-                </Link>
-                <Link to="/demo">
-                  <Button
-                    size="lg"
-                    variant="outline"
-                    className="text-base border-white text-white hover:bg-white/10"
-                  >
-                    Solicitar una demo
-                  </Button>
-                </Link>
+        <div className="w-full px-4 md:px-6">
+          <div className="mx-auto max-w-screen-xl">
+            <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
+              <div>
+                <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
+                  Gestión <span className="text-[#86BC65]">Documental</span>
+                </h1>
+                <p className="mt-6 text-xl text-white/90">
+                  Almacene y gestione contratos, documentos legales e
+                  identificaciones de manera segura y organizada.
+                </p>
+                <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+                  <Link to="/registro">
+                    <Button
+                      size="lg"
+                      className="text-base bg-white text-[#1B2A55] hover:bg-white/90"
+                    >
+                      Comenzar ahora
+                      <ArrowRightIcon className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                  <Link to="/demo">
+                    <Button
+                      size="lg"
+                      variant="outline"
+                      className="text-base border-white text-white hover:bg-white/10"
+                    >
+                      Solicitar una demo
+                    </Button>
+                  </Link>
+                </div>
               </div>
-            </div>
-            <div className="relative flex items-center justify-center lg:justify-end">
-              <div className="relative w-full max-w-lg rounded-2xl bg-gradient-to-br from-[#1B2A55]/50 to-[#86BC65]/30 p-1 shadow-xl">
-                <div className="rounded-xl bg-background/5 backdrop-blur-sm p-4">
-                  <img
-                    src="https://picsum.photos/seed/rentadirecta-documents/800/600"
-                    alt="Panel de Gestión Documental"
-                    className="w-full rounded-lg shadow-sm"
-                  />
+              <div className="relative flex items-center justify-center lg:justify-end">
+                <div className="relative w-full max-w-lg rounded-2xl bg-gradient-to-br from-[#1B2A55]/50 to-[#86BC65]/30 p-1 shadow-xl">
+                  <div className="rounded-xl bg-background/5 backdrop-blur-sm p-4">
+                    <img
+                      src="https://picsum.photos/seed/rentadirecta-documents/800/600"
+                      alt="Panel de Gestión Documental"
+                      className="w-full rounded-lg shadow-sm"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

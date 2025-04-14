@@ -15,15 +15,15 @@ export default function HeroSection() {
       <div className="container max-w-screen-xl">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-8">
           <div className="flex flex-col justify-center">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl text-center">
               Gestión inmobiliaria{" "}
               <span className="text-[#86BC65]">simplificada</span>
             </h1>
-            <p className="mt-6 text-xl text-muted-foreground">
+            <p className="mt-6 text-xl text-muted-foreground text-center">
               Administre sus propiedades, automatice el cobro de rentas y mejore
               la comunicación con sus inquilinos en una sola plataforma.
             </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-4 sm:flex-row justify-center">
               <Link to="/registro">
                 <Button
                   size="lg"
@@ -43,7 +43,7 @@ export default function HeroSection() {
                 </Button>
               </Link>
             </div>
-            <div className="mt-8 flex items-center">
+            <div className="mt-8 flex items-center justify-center">
               <div className="flex -space-x-2">
                 {[1, 2, 3, 4, 5].map((id, index) => (
                   <img
