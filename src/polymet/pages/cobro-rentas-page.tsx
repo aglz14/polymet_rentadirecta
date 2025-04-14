@@ -18,7 +18,8 @@ export default function CobroRentasPage() {
           <div className="absolute right-[-10%] top-[30%] h-[400px] w-[400px] rounded-full bg-[#86BC65]/10 blur-3xl"></div>
         </div>
 
-        <div className="container max-w-screen-xl">
+        <div className="w-full px-4 md:px-6">
+          <div className="mx-auto max-w-screen-xl">
           <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
             <div>
               <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl">
