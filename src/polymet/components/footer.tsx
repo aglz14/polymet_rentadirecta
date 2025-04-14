@@ -11,6 +11,13 @@ import {
 import BrandLogo from "@/polymet/components/brand-logo";
 
 export default function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <footer className="border-t border-border/40 bg-background">
       <div className="container flex h-full max-w-screen-xl mx-auto px-4">
@@ -54,6 +61,7 @@ export default function Footer() {
                   <Link
                     to="/soluciones/gestion-propiedades"
                     className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                    onClick={scrollToTop}
                   >
                     Gestión de Propiedades
                   </Link>
@@ -62,6 +70,7 @@ export default function Footer() {
                   <Link
                     to="/soluciones/cobro-rentas"
                     className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                    onClick={scrollToTop}
                   >
                     Cobro de Rentas
                   </Link>
@@ -70,6 +79,7 @@ export default function Footer() {
                   <Link
                     to="/soluciones/gestion-inquilinos"
                     className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                    onClick={scrollToTop}
                   >
                     Gestión de Inquilinos
                   </Link>
@@ -78,6 +88,7 @@ export default function Footer() {
                   <Link
                     to="/soluciones/gestion-documental"
                     className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                    onClick={scrollToTop}
                   >
                     Gestión Documental
                   </Link>
@@ -93,6 +104,7 @@ export default function Footer() {
                   <Link
                     to="/sobre-nosotros"
                     className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                    onClick={scrollToTop}
                   >
                     Sobre Nosotros
                   </Link>
@@ -101,6 +113,7 @@ export default function Footer() {
                   <Link
                     to="/carreras"
                     className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                    onClick={scrollToTop}
                   >
                     Carreras
                   </Link>
@@ -109,6 +122,7 @@ export default function Footer() {
                   <Link
                     to="/contacto"
                     className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                    onClick={scrollToTop}
                   >
                     Contacto
                   </Link>
@@ -125,6 +139,7 @@ export default function Footer() {
                     <Link
                       to="/privacidad"
                       className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                      onClick={scrollToTop}
                     >
                       Política de Privacidad
                     </Link>
@@ -133,6 +148,7 @@ export default function Footer() {
                     <Link
                       to="/terminos"
                       className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                      onClick={scrollToTop}
                     >
                       Términos de Servicio
                     </Link>
@@ -141,6 +157,7 @@ export default function Footer() {
                     <Link
                       to="/cookies"
                       className="text-muted-foreground hover:text-[#86BC65] transition-colors"
+                      onClick={scrollToTop}
                     >
                       Política de Cookies
                     </Link>
@@ -155,6 +172,7 @@ export default function Footer() {
                     to="#"
                     className="text-muted-foreground hover:text-[#1B2A55] transition-colors"
                     aria-label="Facebook"
+                    onClick={scrollToTop}
                   >
                     <FacebookIcon className="h-5 w-5" />
                   </Link>
@@ -162,6 +180,7 @@ export default function Footer() {
                     to="#"
                     className="text-muted-foreground hover:text-[#1B2A55] transition-colors"
                     aria-label="Twitter"
+                    onClick={scrollToTop}
                   >
                     <TwitterIcon className="h-5 w-5" />
                   </Link>
@@ -169,6 +188,7 @@ export default function Footer() {
                     to="#"
                     className="text-muted-foreground hover:text-[#1B2A55] transition-colors"
                     aria-label="Instagram"
+                    onClick={scrollToTop}
                   >
                     <InstagramIcon className="h-5 w-5" />
                   </Link>
@@ -176,6 +196,7 @@ export default function Footer() {
                     to="#"
                     className="text-muted-foreground hover:text-[#1B2A55] transition-colors"
                     aria-label="LinkedIn"
+                    onClick={scrollToTop}
                   >
                     <LinkedinIcon className="h-5 w-5" />
                   </Link>
@@ -195,18 +216,21 @@ export default function Footer() {
                 <Link
                   to="/privacidad"
                   className="text-sm text-muted-foreground hover:text-[#86BC65] transition-colors"
+                  onClick={scrollToTop}
                 >
                   Privacidad
                 </Link>
                 <Link
                   to="/terminos"
                   className="text-sm text-muted-foreground hover:text-[#86BC65] transition-colors"
+                  onClick={scrollToTop}
                 >
                   Términos
                 </Link>
                 <Link
                   to="/contacto"
                   className="text-sm text-muted-foreground hover:text-[#86BC65] transition-colors"
+                  onClick={scrollToTop}
                 >
                   Contacto
                 </Link>

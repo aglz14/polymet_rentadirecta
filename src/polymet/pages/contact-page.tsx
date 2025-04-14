@@ -20,21 +20,25 @@ export default function ContactPage() {
 
       {/* Contact Form and Location - Side by side layout */}
       <section id="contact-form" className="container max-w-screen-xl">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2">
-          <div>
-            <h2 className="mb-4 text-2xl font-bold tracking-tight text-[#1B2A55]">
-              Envíenos un mensaje
-            </h2>
-            <p className="mb-6 text-muted-foreground">
-              Complete el formulario y nos pondremos en contacto con usted lo
-              antes posible.
-            </p>
+        <div className="grid grid-cols-1 gap-16 md:grid-cols-2">
+          <div className="space-y-8">
+            <div>
+              <h2 className="mb-4 text-2xl font-bold tracking-tight text-[#1B2A55]">
+                Envíenos un mensaje
+              </h2>
+              <p className="mb-6 text-muted-foreground">
+                Complete el formulario y nos pondremos en contacto con usted lo
+                antes posible.
+              </p>
+            </div>
             <ContactForm />
           </div>
-          <div>
-            <h2 className="mb-4 text-2xl font-bold tracking-tight text-[#1B2A55]">
-              Contáctanos
-            </h2>
+          <div className="space-y-8">
+            <div>
+              <h2 className="mb-4 text-2xl font-bold tracking-tight text-[#1B2A55]">
+                Contáctanos
+              </h2>
+            </div>
             <ContactLocation />
           </div>
         </div>
