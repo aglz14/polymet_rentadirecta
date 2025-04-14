@@ -1,0 +1,42 @@
+In HTML, <a> cannot be a descendant of &lt;a&gt;.
+This will cause a hydration error.
+
+  ...
+    <NavigationMenuCollectionSlot scope={undefined}>
+      <NavigationMenuCollectionSlot.Slot ref={function}>
+        <NavigationMenuCollectionSlot.SlotClone ref={function}>
+          <Primitive.div dir="ltr" asChild={true} ref={function}>
+            <Primitive.div.Slot dir="ltr" ref={function}>
+              <Primitive.div.SlotClone dir="ltr" ref={function}>
+                <Primitive.ul data-orientation="horizontal" className="group flex..." ref={function} dir="ltr">
+                  <ul data-orientation="horizontal" className="group flex..." dir="ltr" ref={function}>
+                    <NavigationMenuItem>
+                    <NavigationMenuItem>
+                      <NavigationMenuItemProvider scope={undefined} value="radix-«r2»" triggerRef={{current:null}} ...>
+                        <Primitive.li ref={null}>
+                          <li ref={null}>
+                            <LinkWithRef to="/precios">
+>                             <a
+>                               href="/precios"
+>                               onClick={function handleClick}
+>                               ref={function}
+>                               target={undefined}
+>                               data-discover="true"
+>                             >
+                                ...
+                                  <Primitive.button.Slot onKeyDown={function handleEvent} data-radix-collection-item="" ...>
+                                    <Primitive.button.SlotClone onKeyDown={function handleEvent} ...>
+                                      <Primitive.a data-active={undefined} aria-current={undefined} ...>
+>                                       <a
+>                                         data-active={undefined}
+>                                         aria-current={undefined}
+>                                         className="group inline-flex h-10 w-max items-center justify-center rounded-..."
+>                                         onClick={function handleEvent}
+>                                         onKeyDown={function handleEvent}
+>                                         data-radix-collection-item=""
+>                                         ref={function}
+>                                       >
+                    ...
+
+&lt;a&gt; cannot contain a nested <a>.
+See this log for the ancestor stack trace.
